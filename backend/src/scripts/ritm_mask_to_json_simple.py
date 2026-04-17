@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 
 import os
 import cv2
@@ -56,8 +56,8 @@ def ritm_mask_to_json(mask_path, output_dir):
     print(f'Created JSON: {output_path}')
 
 def main():
-    mask_dir = '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/mask-ritm'
-    json_dir = '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/jsons'
+    mask_dir = '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/mask-ritm'
+    json_dir = '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/jsons'
     mask_files = [f for f in os.listdir(mask_dir) if f.endswith('.png')]
     if not mask_files:
         print('No mask files found in mask-ritm directory.')

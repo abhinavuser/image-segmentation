@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 
 import sys
 import os
@@ -11,9 +11,9 @@ import io
 from PIL import Image
 
 # Add RITM paths
-sys.path.append('/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/ritm_interactive_segmentation')
-sys.path.append('/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/ritm_interactive_segmentation/interactive_demo')
-sys.path.append('/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/ritm_interactive_segmentation/web_demo')
+sys.path.append('/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/ritm_interactive_segmentation')
+sys.path.append('/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/ritm_interactive_segmentation/interactive_demo')
+sys.path.append('/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/ritm_interactive_segmentation/web_demo')
 
 from interactive_demo.controller import InteractiveController
 from model_loader import load_model_from_config, get_model_config
@@ -34,7 +34,7 @@ def load_image_by_name(filename):
     global current_controller, current_image, current_filename
     
     # Path to JPEGImages directory
-    jpeg_dir = '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/JPEGImages'
+    jpeg_dir = '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/JPEGImages'
     image_path = os.path.join(jpeg_dir, filename)
     
     if not os.path.exists(image_path):
@@ -107,7 +107,7 @@ def add_click(x, y, is_positive=True, filename=None):
                     mask_to_save *= 255 // mask_to_save.max() if mask_to_save.max() > 0 else 255
                 
                 # Save under mask-ritm/<imagename>.png
-                mask_dir = '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/mask-ritm'
+                mask_dir = '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/mask-ritm'
                 if not os.path.exists(mask_dir):
                     os.makedirs(mask_dir)
                 
@@ -117,9 +117,9 @@ def add_click(x, y, is_positive=True, filename=None):
                 # Convert the new mask to JSON
                 try:
                     import subprocess
-                    script_path = '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/scripts/ritm_mask_to_json_simple.py'
+                    script_path = '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/scripts/ritm_mask_to_json_simple.py'
                     result = subprocess.run(['python3', script_path, '--file', f'{current_filename}.png'], 
-                                          capture_output=True, text=True, cwd='/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/scripts')
+                                          capture_output=True, text=True, cwd='/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/scripts')
                     if result.returncode == 0:
                         print(f"Successfully converted {current_filename}.png to JSON", file=sys.stderr)
                     else:

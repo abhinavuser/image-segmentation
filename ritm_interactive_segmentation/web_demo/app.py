@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, send_file
+﻿from flask import Flask, render_template, request, jsonify, send_file
 from flask_cors import CORS
 import cv2
 import numpy as np
@@ -136,7 +136,7 @@ def add_click():
                     mask_to_save = mask_to_save.astype(np.uint8)
                     mask_to_save *= 255 // mask_to_save.max() if mask_to_save.max() > 0 else 255
                 # Save under mask-ritm/<imagename>.png
-                mask_dir = '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/mask-ritm'
+                mask_dir = '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/mask-ritm'
                 if not os.path.exists(mask_dir):
                     os.makedirs(mask_dir)
                 if current_filename:
@@ -296,7 +296,7 @@ def load_image_by_name():
         return jsonify({'error': 'No filename provided'}), 400
 
     # Path to JPEGImages directory
-    jpeg_dir = '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/JPEGImages'
+    jpeg_dir = '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/JPEGImages'
     image_path = os.path.join(jpeg_dir, filename)
     if not os.path.exists(image_path):
         return jsonify({'error': f'Image not found: {image_path}'}), 404

@@ -1,4 +1,4 @@
-"""
+﻿"""
 Model loader utility for the interactive segmentation web demo.
 This file provides examples of how to load different types of segmentation models.
 """
@@ -240,7 +240,7 @@ def get_model_config() -> Dict[str, Any]:
     """
     config = {
         'model_type': 'pytorch',  # 'pytorch', 'onnx', or 'dummy'
-        'model_path': '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/ritm_interactive_segmentation/weights/hrnet18_cocolvis_itermask_3p.pth',  # Path to your model file
+        'model_path': '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/ritm_interactive_segmentation/weights/hrnet18_cocolvis_itermask_3p.pth',  # Path to your model file
         'device': 'cpu',        # 'cpu' or 'cuda'
         'model_class': None,    # Will use the original model loading function
         'model_kwargs': {}      # Additional arguments for model constructor

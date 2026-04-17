@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 
 import os
 import sys
@@ -14,7 +14,7 @@ import pandas as pd
 
 def main():
     # Define paths
-    base_dir = Path('/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src')
+    base_dir = Path('/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src')
     
     # Create a temporary directory for flattened frame structure
     flat_frames_dir = base_dir / 'flat_frames'

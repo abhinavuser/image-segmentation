@@ -1,4 +1,4 @@
-# Samsung-Prism Image Segmentation Tool
+﻿# llm-steps-to-master Image Segmentation Tool
 
 Interactive application for image segmentation and annotation, built with React and Express.
 

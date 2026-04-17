@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 
 import os
 import sys
@@ -8,7 +8,7 @@ import argparse
 import subprocess
 
 # Add the XMem project root to Python path
-xmem_root = Path('/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/XMem2-cpu-web')
+xmem_root = Path('/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/XMem2-cpu-web')
 if str(xmem_root) not in sys.path:
     sys.path.append(str(xmem_root))
 
@@ -27,7 +27,7 @@ def process_single_frame(current_frame_number):
     
     try:
         # Define paths first
-        base_dir = Path('/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src')
+        base_dir = Path('/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src')
         frames_dir = base_dir / 'JPEGImages'
         masks_dir = base_dir / 'Annotations'
         output_dir = base_dir / 'predicted_masks'

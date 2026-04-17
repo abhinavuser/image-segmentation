@@ -1,4 +1,4 @@
-# #!/usr/bin/env python3
+﻿# #!/usr/bin/env python3
 
 # import json
 # import os
@@ -144,8 +144,8 @@
 #     args = parser.parse_args()
 
 #     # Define directories using absolute paths
-#     mask_dir = '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/Annotations'
-#     json_dir = '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/json'
+#     mask_dir = '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/Annotations'
+#     json_dir = '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/json'
 #     meta_path = args.meta
 
 #     print(f"Mask directory: {mask_dir}")
@@ -396,8 +396,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Define directories using absolute paths
-    mask_dir = '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/Annotations'
-    json_dir = '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/json'
+    mask_dir = '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/Annotations'
+    json_dir = '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/json'
     meta_path = args.meta
 
     print(f"Mask directory: {mask_dir}")
