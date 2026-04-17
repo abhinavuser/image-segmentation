@@ -1,4 +1,4 @@
-﻿# llm-steps-to-master Image Segmentation Tool
+﻿# Image Segmentation Tool
 
 Interactive application for image segmentation and annotation, built with React and Express.
 
@@ -26,6 +26,3 @@ Interactive application for image segmentation and annotation, built with React 
 - `/frontend` - React application with Vite
 - `/backend` - Express server for JSON storage
 
-## License
-
-[MIT License](LICENSE)
