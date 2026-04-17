@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, send_file
+﻿from flask import Flask, render_template, request, jsonify, send_file
 from flask_cors import CORS
 import cv2
 import numpy as np
@@ -29,10 +29,10 @@ from mask_to_json import mask_to_json
 from pathlib import Path
 
 # ==== HARDCODED PATHS (centralized for future refactor) ====
-MASK_RITM_DIR = '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/mask-ritm'
-JPEGIMAGES_DIR = '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/JPEGImages'
-JSON_DIR = '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/json'
-PROCESS_SINGLE_FRAME_SCRIPT = '/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/scripts/process_single_frame.py'
+MASK_RITM_DIR = '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/mask-ritm'
+JPEGIMAGES_DIR = '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/JPEGImages'
+JSON_DIR = '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/json'
+PROCESS_SINGLE_FRAME_SCRIPT = '/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/scripts/process_single_frame.py'
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes

@@ -1,4 +1,4 @@
-const Footer = () => {
+﻿const Footer = () => {
   const socialLinks = [
     {
       name: 'Facebook',
@@ -44,7 +44,7 @@ const Footer = () => {
         {/* Brand Section */}
         <div className="text-center md:text-left mb-4 md:mb-0">
           <h3 className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-1">
-            Samsung Prism
+            llm-steps-to-master
           </h3>
           <p className="text-gray-400 text-sm max-w-xs">
             Professional multi-view image segmentation & correction.
@@ -53,7 +53,7 @@ const Footer = () => {
         {/* Copyright & Links */}
         <div className="text-center md:text-right">
           <p className="text-gray-500 text-xs mb-2">
-            &copy; {new Date().getFullYear()} Samsung Prism. All rights reserved.
+            &copy; {new Date().getFullYear()} llm-steps-to-master. All rights reserved.
           </p>
           <div className="flex justify-center md:justify-end space-x-4 text-xs">
             <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Privacy Policy</a>
@@ -66,3 +66,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

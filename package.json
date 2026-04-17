@@ -1,5 +1,5 @@
-{
-  "name": "prism-image-segmenter",
+﻿{
+  "name": "llm-steps-to-master",
   "version": "1.0.0",
   "description": "Image Segmentation Application with React frontend and Express backend",
   "main": "index.js",
@@ -21,3 +21,4 @@
     "concurrently": "^8.2.2"
   }
 }
+

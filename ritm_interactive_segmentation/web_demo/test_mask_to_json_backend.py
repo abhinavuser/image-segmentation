@@ -1,8 +1,8 @@
-import sys
+﻿import sys
 import os
 
 # Add backend scripts directory to sys.path
-sys.path.append('/home/aravinthakshan/Projects/Samsung2/Samsung-Prism/backend/src/scripts')
+sys.path.append('/home/aravinthakshan/Projects/Samsung2/llm-steps-to-master/backend/src/scripts')
 from mask_to_json import mask_to_json
 
 def main():

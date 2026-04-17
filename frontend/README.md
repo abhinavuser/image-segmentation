@@ -1,6 +1,6 @@
-# Prism Frontend
+﻿# llm-steps-to-master
 
-This is the frontend application for the Samsung Prism project. It is built using React and Vite, with Tailwind CSS for styling.
+This is the frontend application for the llm-steps-to-master project. It is built using React and Vite, with Tailwind CSS for styling.
 
 ## Features
 - Modern, responsive UI
@@ -81,4 +81,5 @@ frontend/
 - Place static assets in `public/` or `src/assets/`.
 
 ## License
-This project is part of the Prism suite. See the main repository for license details.
+This project is part of the llm-steps-to-master. See the main repository for license details.
+
